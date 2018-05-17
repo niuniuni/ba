@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <input type="text" placeholder="搜索商品名称">
+        </header>
+        <div class="top">
+            <span>推荐</span>
+            <span>手机</span>
+            <span>智能</span>
+            <span>电视</span>
+            <span>电脑</span>
+            <span>全面屏</span>
+        </div>
+        <main class="main">
+            <div class="banner">
+                <ul>
+                    <li><img src="img/1.png" alt="">
+                        <P>￥569</P>
+                    </li>
+                    <li><img src="img/2.png" alt="">
+                        <P>￥569</P>
+                    </li>
+                    <li><img src="img/3.png" alt="">
+                        <P>￥569</P>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <img src="img/4.png" alt="">
+            </div>
+            <div class="box">
+                <img src="img/5.png" alt="">
+            </div>
+        </main>
+        <footer>
+            <span>首页</span>
+            <span>分类</span>
+            <span>购物车</span>
+            <span>我的</span>
+        </footer>
+    </div>
+
+    <script class="tel" type="text/x-handlebars-template">
+        {{#each data}}
+
+        <li>
+            <img src={{img}} alt="">
+            <P>{{jg}}</P>
+        </li>
+
+        {{/each}}
+    </script>
+    <script src="js/require.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        require(['index'])
+    </script>
+</body>
+
+</html>

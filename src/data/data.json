@@ -1,0 +1,13 @@
+{
+    "result": "success",
+    "data": [{
+        "img": "img/1.png",
+        "jg": 569
+    }, {
+        "img": "img/2.png",
+        "jg": 569
+    }, {
+        "img": "img/3.png",
+        "jg": 569
+    }]
+}
